@@ -1,0 +1,52 @@
+print("This is a terminal calculator\n")
+
+# Addition
+def add():
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    print("Result:", num1 + num2)
+
+# Subtraction
+def sub():
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    print("Result:", num1 - num2)
+
+# Multiplication
+def mult():
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    print("Result:", num1 * num2)
+
+# Division
+def div():
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    if num2 == 0:
+        print("Error: Cannot divide by zero.")
+    else:
+        print("Result:", num1 / num2)
+
+while True:
+    print("\n--- Calculator Menu ---")
+    print("Type 1 for Addition")
+    print("Type 2 for Subtraction")
+    print("Type 3 for Multiplication")
+    print("Type 4 for Division")
+    print("Type 0 to Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        add()
+    elif choice == "2":
+        sub()
+    elif choice == "3":
+        mult()
+    elif choice == "4":
+        div()
+    elif choice == "0":
+        print("Exiting calculator... Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
