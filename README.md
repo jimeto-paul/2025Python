@@ -1,2 +1,2 @@
-# 2025Python
-My 2025 Python Projects.
+#Hello
+These are a compilation of all the Python Projects I did in Year 9.
